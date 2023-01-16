@@ -12,6 +12,7 @@ class WebsmsService
     public function __construct(
         protected string $username,
         protected string $password,
+        protected bool $testMode = false
     ) {
 
     }

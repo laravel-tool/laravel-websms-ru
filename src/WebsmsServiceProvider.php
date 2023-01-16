@@ -22,6 +22,7 @@ class WebsmsServiceProvider extends ServiceProvider
                 return new WebsmsChannel(
                     $this->app['config']['websms_ru.username'],
                     $this->app['config']['websms_ru.password'],
+                    $this->app['config']['websms_ru.test_mode'],
                     $this->app['config']['websms_ru.default_sender'],
                 );
             });

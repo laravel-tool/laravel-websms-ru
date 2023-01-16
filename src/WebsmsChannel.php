@@ -13,6 +13,7 @@ class WebsmsChannel
     public function __construct(
         protected ?string $username,
         protected ?string $password,
+        protected bool $testMode,
         protected ?string $defaultSender
     ) {
 
@@ -37,7 +38,7 @@ class WebsmsChannel
         }
         $message = $notification->toSms($notifiable);
 
-        $service = new WebsmsService($this->username, $this->password);
+        $service = new WebsmsService($this->username, $this->password, $this->testMode);
         $service->send(
             $to,
             $message,
