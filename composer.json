@@ -1,6 +1,12 @@
 {
     "name": "laravel-tool/laravel-websms-ru",
     "description": "Laravel WebSMS.ru channel provider",
+    "keywords": [
+        "laravel",
+        "notification",
+        "websms.ru",
+        "channel"
+    ],
     "type": "laravel-plugin",
     "license": "MIT",
     "authors": [
